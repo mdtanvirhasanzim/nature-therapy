@@ -595,34 +595,87 @@ nav ul li a:hover{
     Latest Articles
 ==========================*/
 
+/*==========================
+    Latest Articles
+==========================*/
+
 .articles{
-
-    padding:90px 8%;
-
-    background:#ffffff;
-
+    padding:80px 8%;
+    background:#f8fbf8;
 }
 
 .articles h2{
-
     text-align:center;
-
-    font-size:48px;
-
-    color:var(--dark);
-
-    margin-bottom:60px;
-
+    font-size:45px;
+    color:#1f4d3b;
+    margin-bottom:50px;
 }
 
 .article-grid{
-
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
 
-    gap:35px;
+.card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    transition:.35s;
+}
 
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content span{
+    display:inline-block;
+    background:#e8f5e9;
+    color:#2e7d32;
+    padding:6px 15px;
+    border-radius:30px;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.card-content h3{
+    font-size:28px;
+    color:#1f4d3b;
+    margin-bottom:15px;
+}
+
+.card-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.card-content a{
+    color:#2e7d32;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.card-content a:hover{
+    text-decoration:underline;
 }
 
 .card{
