@@ -512,3 +512,82 @@ nav ul li a:hover{
     background:#66BB6A;
 
 }
+/*==========================
+    Categories
+==========================*/
+
+.categories{
+
+    padding:80px 8%;
+
+    background:#f6fbf6;
+
+}
+
+.categories h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:var(--dark);
+
+    margin-bottom:50px;
+
+}
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+}
+
+.category-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    font-size:50px;
+
+}
+
+.category-card h3{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    color:var(--dark);
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.category-card:hover h3{
+
+    color:white;
+
+}
