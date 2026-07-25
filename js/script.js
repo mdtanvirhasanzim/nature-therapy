@@ -1,7 +1,3 @@
-const button=document.querySelector("button");
-
-button.addEventListener("click",()=>{
-
-alert("Welcome to My Blog!");
-
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Nature Therapy Loaded Successfully");
 });
